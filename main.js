@@ -1,10 +1,10 @@
-// Returns a random DNA base
+// Returns a random DNA base - Provided by Codecademy
 const returnRandBase = () => {
     const dnaBases = ['A', 'T', 'C', 'G']
     return dnaBases[Math.floor(Math.random() * 4)] 
   }
   
-  // Returns a random single strand of DNA containing 15 bases
+  // Returns a random single strand of DNA containing 15 bases - Provided by Codecademy
   const mockUpStrand = () => {
     const newStrand = []
     for (let i = 0; i < 15; i++) {
@@ -13,6 +13,7 @@ const returnRandBase = () => {
     return newStrand
   }
   
+  // Factory function that can be used to generate pAequor objects with built-in functionality
   const pAequorFactory = (number, arr) => {
     const dnaBases = ['A', 'T', 'C', 'G'];
     return {
@@ -52,6 +53,7 @@ const returnRandBase = () => {
     }
   }
   
+// Creates 30 pAequor objects that have a 60% chance of survival
   const createThirtyPAequorInstances = () => {
     const thirtyPAequorInstances = [];
     let i = 0;
@@ -68,6 +70,7 @@ const returnRandBase = () => {
     return thirtyPAequorInstances;
   }
   
+  // Printing 30 pAequor objects to the console
   console.log(createThirtyPAequorInstances());
   
   
